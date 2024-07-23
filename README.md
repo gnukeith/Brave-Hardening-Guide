@@ -182,6 +182,8 @@ By adjusting these settings according to your privacy preferences, you can balan
 
 # Explanation of Brave Privacy and Security Settings
 
+***all the setting that i go over here are located here: brave://settings/privacy***
+
 ## WebRTC IP Handling Policy
 
 WebRTC (Web Real-Time Communication) is a feature that enables voice and video communication directly within the browser without needing plugins. However, it can expose your IP address even when using a VPN. Brave offers different settings to manage how WebRTC handles IP addresses:
@@ -270,3 +272,178 @@ While the intent behind "Do Not Track" is privacy-focused, its practical impact 
   <img src="img/recommend_ps_settings.png" alt="Brave Privacy and Security Settings">
 </p>
 
+# Tor Settings in Brave Browser vs Normal Tor Browser
+
+## Tor Windows Settings in Brave
+
+<p align="center">
+  <img src="img/tor_default.png" alt="TOR mode on">
+</p>
+
+### 1. Private Window with Tor
+
+- **What it does:** Opens a private browsing window that uses the Tor network to hide your IP address from the sites you visit.
+- **Pros:**
+  - Enhanced privacy by masking your IP address.
+  - Access to onion services and websites blocked in your region.
+- **Cons:**
+  - Slower browsing speeds due to routing through multiple Tor nodes.
+  - Some websites may not work correctly due to IP address changes.
+- **Recommendation:** While this offers additional privacy, it's not as robust as the dedicated Tor Browser, which provides more comprehensive protection and anonymity.
+
+### 2. Only Resolve .onion Addresses in Tor Windows
+
+- **What it does:** Restricts access to .onion sites to Tor windows only.
+- **Pros:**
+  - Prevents accidental access to onion sites in non-Tor windows, which could compromise privacy.
+- **Cons:**
+  - Limits the ability to access .onion sites without opening a Tor window.
+- **Recommendation:** Useful for ensuring that onion sites are accessed securely through Tor.
+
+### 3. Volunteer to Help Others Connect to the Tor Network
+
+- **What it does:** Enables the Snowflake extension, allowing users in censored countries to connect to the Tor network through your connection.
+- **Pros:**
+  - Helps support the Tor network and users in restricted regions.
+  - Enhances the robustness and accessibility of the Tor network.
+- **Cons:**
+  - Uses some of your bandwidth to relay traffic.
+  - Potential minor impact on your internet speed.
+- **Recommendation:** Beneficial for those who want to support internet freedom and have sufficient bandwidth.
+
+### 4. Use Bridges
+
+- **What it does:** Allows the use of Tor bridges to connect to the Tor network in regions where it is blocked.
+- **Pros:**
+  - Provides access to Tor in censored regions.
+  - Enhances the ability to bypass government or ISP blocks on Tor.
+- **Cons:**
+  - May require additional configuration.
+  - Some bridges might be slower or less reliable.
+- **Recommendation:** Essential for users in regions with heavy censorship; useful to have this option available.
+
+## Why Tor Mode in Brave is Not Recommended Over the Normal Tor Browser
+
+### Tor Mode in Brave:
+- **Integration:** Tor mode in Brave offers easy access to Tor within the Brave browser.
+- **Convenience:** Convenient for users who want occasional anonymity without switching browsers.
+- **Limitations:** Provides basic Tor functionalities but lacks the full suite of privacy features available in the Tor Browser.
+
+### Normal Tor Browser:
+- **Comprehensive Privacy:** Designed specifically for anonymity, providing robust privacy protections.
+- **Security Features:** Includes additional security measures such as NoScript, which prevents JavaScript exploits.
+- **Updates:** Regular updates directly from the Tor Project to address vulnerabilities and enhance security.
+- **Community Support:** Extensive support and documentation from the Tor community for troubleshooting and advanced configurations.
+
+## Conclusion
+
+- **Best for Maximum Privacy:** Use the Tor Browser for the most secure and private browsing experience.
+- **Best for Convenience:** Use Tor mode in Brave for occasional private browsing with easy access to both Tor and regular websites.
+
+## Summary
+
+- Brave offers Tor integration for enhanced privacy, but it's not as comprehensive as the dedicated Tor Browser.
+- Key Brave Tor settings include Private Window with Tor, .onion address resolution, and options to support the Tor network.
+- While convenient, Brave's Tor mode lacks some advanced privacy features of the normal Tor Browser.
+- For maximum privacy and anonymity, the dedicated Tor Browser is recommended.
+- Use Brave's Tor features for occasional private browsing when convenience is preferred over maximum security.
+
+*I just turn TOR mode off completely as it's not as secure as the normal TOR browser.*
+
+<p align="center">
+  <img src="img/tor_disabled.png" alt="TOR mode off">
+</p>
+
+## Data Collection Settings
+
+When hardening Brave for maximum privacy, disable the following settings:
+
+1. Allow privacy-preserving product analytics (P3A)
+2. Automatically send daily usage ping to Brave
+3. Automatically send diagnostic reports
+
+Although these collect anonymous data to improve Brave, disabling them ensures no data is sent back to Brave servers, enhancing privacy.
+
+<p align="center">
+  <img src="img/tel_def.png" alt="Default Telemtry Settings">
+</p>
+
+**Recommendation:** Turn OFF all data collection settings for the highest level of privacy when hardening Brave.
+
+<p align="center">
+  <img src="img/tel_dis.png" alt="Disabled Telemtry Settings">
+</p>
+
+<hr>
+
+<h4>brave://settings/security</h4>
+
+### Safe Browsing
+
+#### **Safe Browsing:**
+- **Standard Protection:**
+  - **Function:** Protects against dangerous websites, downloads, and extensions by checking them against a database of known threats. When a page looks suspicious, some data is sent to Google's Safe Browsing to verify its safety.
+  - **Why It's Important:** Disabling Safe Browsing removes a crucial layer of protection against malware, phishing attacks, and other online threats, leaving you vulnerable to malicious content.
+
+#### **Default Settings (OS Default):**
+- **Function:** Uses the DNS (Domain Name System) resolver set by your operating system or network provider.
+- **Pros:** Simple and reliable, uses existing system settings without additional configuration.
+- **Cons:** May not provide the best privacy, as ISPs (Internet Service Providers) can log and monitor your DNS queries.
+
+<p align="center">
+  <img src="img/os_def_dns.png" alt="Default DNS">
+</p>
+
+#### **Custom Settings (Using Mullvad DNS):**
+- **Function:** Configured to use Mullvad DNS (https://base.dns.mullvad.net/dns-query), a privacy-focused DNS service.
+- **Pros:** Enhances privacy by using a DNS provider that does not log your DNS queries or track your browsing activity.
+- **Cons:** Requires manual configuration.
+
+<p align="center">
+  <img src="img/my_dns_settings.png" alt="Mullvad DNS">
+</p>
+
+### Secure DNS
+
+#### **Secure DNS:**
+- **What It Does:** Encrypts DNS queries, preventing third parties from seeing which websites you visit. This is done by using protocols like DNS over HTTPS (DoH) or DNS over TLS (DoT).
+- **Importance:**
+  - **Privacy:** Protects against eavesdropping and manipulation of DNS data by ensuring that your DNS requests are encrypted and secure.
+  - **Security:** Reduces the risk of DNS spoofing attacks, where attackers redirect you to malicious sites by altering DNS responses.
+
+### Summary
+- **Safe Browsing:** Essential for security; should remain enabled to protect against online threats.
+- **Default DNS Settings:** Convenient but may compromise privacy.
+- **Custom DNS (Mullvad):** Offers enhanced privacy and security by using a DNS provider that respects user privacy.
+- **Secure DNS:** Crucial for maintaining privacy and security online by encrypting DNS queries and protecting against various attacks.
+<hr>
+
+# V8 Optimizer in Brave Browser
+***brave://settings/content/v8***
+#### **What is the V8 Engine?**
+The V8 engine is an open-source JavaScript engine developed by Google, which is used in both Google Chrome and Brave browsers. It is responsible for executing JavaScript code in the browser, allowing websites to perform dynamic actions and interact with users. V8 compiles JavaScript directly to native machine code before executing it, which makes it very fast.
+
+#### **V8 Optimizer:**
+- **Default Behavior:**
+  - **Sites Can Use the V8 Optimizer:** This setting allows the V8 engine to optimize JavaScript execution, which can significantly improve site performance and speed. It ensures that features using JavaScript work as intended.
+  - **Don't Allow Sites to Use the V8 Optimizer:** Disabling this can reduce performance but makes the V8 engine more resistant to certain types of attacks, potentially increasing security.
+
+#### **Customizing V8 Optimizer Behavior:**
+- **Blacklisting Sites (Not Allowed to Use V8 Optimizer):**
+  - You can add specific websites to a blacklist to prevent them from using the V8 optimizer. This might be useful for sites where you suspect the JavaScript could be malicious or where you experience performance issues that could be related to V8 optimizations.
+  - **How to Add:** Click the "Add" button under "Not allowed to use V8 optimizer" and enter the URLs of the sites you want to restrict.
+
+- **Whitelisting Sites (Always Allowed to Use V8 Optimizer):**
+  - You can also add specific websites to a whitelist to ensure they always benefit from V8 optimizations, even if you generally prefer to restrict this feature.
+  - **How to Add:** Click the "Add" button under "Always allowed to use V8 optimizer" and enter the URLs of the sites you want to allow.
+
+### Summary
+- **V8 Engine:** A high-performance JavaScript engine that enhances the speed and functionality of web applications.
+- **V8 Optimizer:** Improves site performance by optimizing JavaScript execution. You can control its usage:
+  - **Default Behavior:** Generally recommended for better performance.
+  - **Custom Behavior:** Allows for specific sites to be blacklisted or whitelisted based on your preferences for performance and security.
+
+*I personally keep it as default:*
+<p align="center">
+  <img src="img/v8.png" alt="V8 Engine">
+</p>
