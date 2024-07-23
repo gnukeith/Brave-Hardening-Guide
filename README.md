@@ -694,6 +694,17 @@ Using a dedicated password manager like Bitwarden offers superior security, bett
 
 <h3 align="center">5. Wallet/Crypto - Settings</h3>
 
+### Brave Wallet and Brave Rewards
+
+#### **Brave Wallet:**
+- **What It Is:** A built-in cryptocurrency wallet integrated into the Brave browser.
+- **Function:** Allows you to store, manage, and send cryptocurrencies directly from your browser. It supports various digital assets and is designed to work seamlessly with Brave’s privacy features.
+
+#### **Brave Rewards:**
+- **What It Is:** A program that lets you earn Basic Attention Tokens (BAT) by viewing privacy-respecting ads.
+- **Function:** You can earn BAT for opting into ads and use these tokens to support content creators or redeem them. It’s a way to get rewarded for your attention while maintaining privacy.
+
+
 *brave://settings/web3*
 
 **These are the default settings except for "Automatically lock Brave Wallet" which is set by default to 10 min**
@@ -724,7 +735,7 @@ Using a dedicated password manager like Bitwarden offers superior security, bett
 
 
 <p align="center">
-  <img src="dis_sponsored_images.png" alt="Disable Sponsored images">
+  <img src="img/dis_spr.png" alt="Disable Sponsored images">
 </p>
 
 
@@ -737,37 +748,7 @@ Using a dedicated password manager like Bitwarden offers superior security, bett
   <img src="img/hide_br_bw.png" alt="Hide wallet and Rewards">
 </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<hr>
 
 ***If you find any errors in this guide pls let me know
 I will change it ASAP***
