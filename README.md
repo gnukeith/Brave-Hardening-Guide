@@ -4,7 +4,9 @@
 
 <h2 align="center">What is the Brave browser?</h2>
 
-<p align="center">The Brave browser is a free,[open-source](https://github.com/brave/brave-core) web browser that prioritizes user privacy and security. It's built on the Chromium web browser, which is the foundation for Google Chrome. Brave is known for its built-in ad-blocking and tracking protection, which can make browsing faster and more private. It also offers a unique feature called Brave Rewards, where users can earn cryptocurrency (Basic Attention Token or BAT) for viewing privacy-respecting ads. Additionally, Brave has a built-in cryptocurrency wallet called Brave Wallet and a firewall and VPN service called Brave Firewall + VPN, which are available as paid options.</p>
+<p align="center">The Brave browser is a free, open-source  web browser that prioritizes user privacy and security. It's built on the Chromium web browser, which is the foundation for Google Chrome. Brave is known for its built-in ad-blocking and tracking protection, which can make browsing faster and more private. It also offers a unique feature called Brave Rewards, where users can earn cryptocurrency (Basic Attention Token or BAT) for viewing privacy-respecting ads. Additionally, Brave has a built-in cryptocurrency wallet called Brave Wallet and a firewall and VPN service called Brave Firewall + VPN, which are available as paid options.</p>
+
+*Brave source code can be found here:* https://github.com/brave/brave-core
 
 <p align="center">Brave is also known for its speed and efficiency. It's designed to use less memory and battery life compared to other browsers, which can be beneficial for users on mobile devices or older computers.</p>
 
@@ -90,6 +92,12 @@
 
 7. **Forget me when I close this site:**
    - **On:** Same as before, deletes cookies and site data when you close the site.
+
+   **Note:** This setting can log you out of websites each time you close them, so be aware of this behavior.
+
+   You can whitelist sites where you want to stay logged in by clicking on the Brave Shields icon and adjusting the settings for that specific site.
+
+    <img src="img/cookies_whitelist.png" alt="Whitelisting">
 
 8. **Content filtering:**
    - **Disabled:** Same as before, no custom filters are applied.
@@ -447,3 +455,361 @@ The V8 engine is an open-source JavaScript engine developed by Google, which is 
 <p align="center">
   <img src="img/v8.png" alt="V8 Engine">
 </p>
+<hr>
+
+### Privacy and Security: Delete Browsing Data
+*brave://settings/clearBrowserData*
+#### **Delete Browsing Data**
+- **Purpose:** Helps maintain your privacy by removing history, cookies, cache, and other browsing data.
+- **Recommendation:** Regularly clear your cookies and cache to enhance privacy and security. This can prevent tracking and free up space on your device.
+- **Customization:** You can customize what data to delete (e.g., browsing history, download history, cookies, cached images and files, passwords, and more) based on your preferences.
+
+Clearing your browsing data periodically helps protect your privacy and keeps your browser running smoothly.
+
+<p align="center">
+  <img src="img/del_data.png" alt="Clear Browsing Data">
+</p>
+
+<hr>
+
+### Site and Shields Settings in Brave
+
+*brave://settings/content*
+
+#### **Overview:**
+These settings allow you to control what permissions and content sites can access and display, enhancing your privacy and security.
+
+
+<p align="center">
+  <img src="img/content1.png" alt="Settings content 1">
+</p>
+
+<p align="center">
+  <img src="img/content2.png" alt="Settings content 2">
+</p>
+
+#### **Key Settings:**
+
+1. **Location:**
+   - **Default:** Don't allow sites to see your location.
+   - **Why:** Prevents sites from tracking your physical location, which enhances your privacy.
+   - **Recommendation:** Enable location access only for trusted sites that need it for functionality, like maps services.
+
+2. **Camera:**
+   - **Default:** Don't allow sites to use your camera.
+   - **Why:** Protects against unauthorized access to your camera, which could be exploited for surveillance or spying.
+   - **Recommendation:** Enable camera access only for sites where it's essential, such as video conferencing platforms.
+
+3. **Microphone:**
+   - **Default:** Don't allow sites to use your microphone.
+   - **Why:** Prevents unauthorized listening, protecting your conversations from being intercepted.
+   - **Recommendation:** Enable microphone access only for sites where it's necessary, like online meetings.
+
+4. **Notifications:**
+   - **Default:** Don't allow sites to send notifications.
+   - **Why:** Avoids unsolicited notifications that can be intrusive and annoying.
+   - **Recommendation:** Enable notifications only for sites where you want real-time updates.
+
+5. **Block Cookies:**
+   - **Default:** Third-party cookies are blocked.
+   - **Why:** Reduces tracking by advertisers and improves privacy by preventing third parties from storing cookies on your device.
+   - **Recommendation:** Keep this setting to block third-party cookies by default.
+
+6. **JavaScript:**
+   - **Default:** Sites can use JavaScript.
+   - **Why:** JavaScript is necessary for many modern web functionalities, but it can also be used for malicious purposes.
+   - **Recommendation:** Disable JavaScript for untrusted sites, but keep it enabled for trusted sites that require it.
+
+7. **Images:**
+   - **Default:** Sites can show images.
+   - **Why:** Images are generally safe and necessary for a full web experience.
+   - **Recommendation:** Keep this enabled, but disable for specific sites if needed.
+
+8. **Pop-ups and Redirects:**
+   - **Default:** Don't allow sites to send pop-ups or use redirects.
+   - **Why:** Pop-ups and redirects can be used for phishing, ads, or malicious content.
+   - **Recommendation:** Keep this setting enabled to block pop-ups and redirects, allowing exceptions only for trusted sites.
+
+9. **Automatically Remove Permissions from Unused Sites:**
+   - **Default:** Enabled.
+   - **Why:** This removes permissions from sites you haven't visited recently, enhancing your privacy by limiting persistent access.
+   - **Recommendation:** Keep this enabled for better privacy management.
+
+### Why Default Denial is Important:
+- **Security:** Prevents unauthorized access to sensitive features like your camera, microphone, and location.
+- **Privacy:** Limits the ability of sites to track your activities and collect data.
+- **Control:** Gives you the ability to grant permissions only to trusted sites, reducing the risk of exploitation.
+
+### Conclusion
+Keeping these permissions disabled by default and whitelisting only necessary and trusted sites is a crucial step in maintaining robust privacy and security while browsing.
+<hr>
+
+<h3 align="center">3. Autofill and passwords - Settings</h3>
+
+
+### Autofill and Passwords: Why You Should Use a Dedicated Password Manager
+
+#### **Built-in Autofill Features:**
+- **Convenience:** Built-in browser autofill features, like those in Brave, provide an easy way to save and automatically fill passwords, payment methods, and addresses.
+- **Security Concerns:** These built-in features, while convenient, are not as secure as dedicated password managers. They are more vulnerable to browser exploits and attacks that could expose your sensitive information.
+
+#### **Why Choose a Dedicated Password Manager like Bitwarden:**
+
+1. **Enhanced Security:**
+   - **Encryption:** Dedicated password managers use robust encryption to protect your data. Bitwarden, for instance, uses end-to-end encryption, ensuring that only you can access your stored information.
+   - **Security Audits:** Bitwarden undergoes regular security audits to ensure its platform remains secure and free from vulnerabilities.
+
+2. **Cross-Platform Syncing:**
+   - **Seamless Access:** Bitwarden allows you to access your passwords and other data across multiple devices and platforms securely, including mobile devices, desktops, and web browsers.
+
+3. **Advanced Features:**
+   - **Two-Factor Authentication (2FA):** Provides an additional layer of security for accessing your password vault.
+   - **Password Generator:** Generates strong, unique passwords for each of your accounts, reducing the risk of password reuse and improving security.
+   - **Security Reports:** Bitwarden can provide reports on the strength of your passwords and alert you to potential security issues like reused or weak passwords.
+
+4. **Privacy:**
+   - **Data Ownership:** With services like Bitwarden, you maintain ownership and control over your data. They have a strong privacy policy that ensures your data is not monetized or shared without your consent.
+
+5. **Community Trust:**
+   - **Open Source:** Bitwarden is open-source software, meaning its code is publicly available for review. This transparency helps build trust and allows security experts to inspect the code for vulnerabilities.
+
+### Summary
+Using a dedicated password manager like Bitwarden offers superior security, better cross-platform functionality, and enhanced privacy features compared to built-in browser autofill solutions. For the best protection of your sensitive data, it is recommended to use a dedicated password manager.
+
+*brave://settings/autofill*
+
+<p align="center">
+  <img src="img/autofill.png" alt="Disable Autofill">
+</p>
+
+*brave://settings/addresses*
+
+<p align="center">
+  <img src="img/add.png" alt="Disable Address Autofill">
+</p>
+
+*brave://password-manager/settings*
+
+<p align="center">
+  <img src="img/pass.png" alt="Disable Password Autofill">
+</p>
+
+*brave://settings/payments*
+
+<p align="center">
+  <img src="img/pay.png" alt="Disable payment and autofill">
+</p>
+
+<hr>
+
+<h3 align="center">4. Extensions - Settings</h3>
+
+
+*brave://settings/extensions*
+
+<p align="center">
+  <img src="img/ext_def.png" alt="Default Extension Settings">
+</p>
+
+#### **Manifest V2 Extensions**
+
+- **What is Manifest V2?**
+  - Manifest V2 is a format for writing extensions for browsers like Chrome and Brave. It allows developers to specify permissions, background scripts, and other features needed by the extension.
+  - **Brave Shields and Manifest V3:** Brave's ad and tracker blocking technology, Brave Shields, is built directly into the browser. This means that changes in extension manifests, such as the transition from Manifest V2 to Manifest V3, do not affect Brave Shields' functionality. Brave Shields will continue to block ads and trackers regardless of these changes.
+
+#### **Hangouts**
+- **Hangout Component:** Uses the Hangouts component to enable screen sharing and other features.
+- **Controversy:** Google Hangouts has faced various privacy concerns and will be phased out by Brave. This change reflects Brave's commitment to enhancing user privacy and security.
+  - **Brave's Action:** Brave is actively working to remove Hangouts from its components due to its discontinuation and privacy issues.
+
+    *See more here:* https://github.com/brave/brave-core/pull/24594
+
+#### **Enabled Settings:**
+1. **Media Router:**
+   - **Function:** Enables casting features in the browser.
+   - **Recommendation:** Keep this enabled if you use devices like Chromecast to cast content from your browser to your TV or other devices. Disable if you do not use casting features to reduce potential attack vectors.
+
+2. **WebTorrent:**
+   - **Function:** Allows torrents to be displayed directly in the browser.
+   - **Recommendation:** Keep this enabled if you frequently download torrents. Disable if you do not use torrents to minimize potential security risks.
+
+#### **Disabled Settings (by default):**
+1. **Allow Google login for extensions:**
+   - **Recommendation:** Keep this disabled to avoid using Google services for logging into extensions. This can enhance privacy by reducing the data shared with Google.
+
+2. **Widevine:**
+   - **Function:** Digital Rights Management (DRM) component for viewing protected streaming video.
+   - **Recommendation:** Enable only if you need to access DRM-protected content such as certain streaming services. Keeping it disabled can enhance privacy.
+
+### Summary
+- **Manifest V2 Extensions:** These will not affect Brave Shields, ensuring continuous protection against ads and trackers.
+- **Hangouts Removal:** Brave is removing the Hangouts component.
+
+
+- **Extension Settings:**
+  - Enable Media Router and WebTorrent if you use casting and torrenting features.
+  - Keep settings like Google login for extensions and Widevine disabled unless necessary to enhance privacy and security.
+
+*These are my extension settings:*
+<p align="center">
+  <img src="img/ext_my.png" alt="My Extension Settings">
+</p>
+
+<hr>
+
+<h3 align="center">5. Search - Settings</h3>
+
+*brave://settings/search*
+
+
+
+***default search settings:***
+<p align="center">
+  <img src="img/def_search.png" alt="Default Search Settings">
+</p>
+
+**Here's a concise list of what The Web Discovery Project is:**
+
+• The Web Discovery Project is an opt-out feature that allows users to contribute anonymous data to improve Brave Search's relevance and independence.
+
+• Data collected includes search queries, clicked results, visited URLs, time spent on pages, and page metadata, but cannot be linked back to individual users.
+
+• The project uses privacy-preserving methods like unlinkability and distributed quorum to protect user anonymity.
+
+• Collected data helps Brave understand popular keywords, relevant websites, and user interactions to improve search results.
+
+• Users can opt out at any time, and the data retention period is one year.
+
+• The project has minimal performance impact and runs only on desktop devices.
+
+*More info can be found here:* https://support.brave.com/hc/en-us/articles/4409406835469-What-is-the-Web-Discovery-Project
+
+***(Hardened) Search Engine Settings:***
+
+<p align="center">
+  <img src="img/rec_search.png" alt="My Search Settings">
+</p>
+
+<hr>
+
+<h3 align="center">5. Wallet/Crypto - Settings</h3>
+
+*brave://settings/web3*
+
+**These are the default settings except for "Automatically lock Brave Wallet" which is set by default to 10 min**
+<p align="center">
+  <img src="img/wallet1.png" alt="Wallet Settings 1">
+</p>
+
+
+<p align="center">
+  <img src="img/wallet2.png" alt="Wallet Settings 2">
+</p>
+
+**I highly recommend you give Brave wallet a try, we are waiting for on-chain rewards to be implemented**
+
+*see more here:* https://brave.com/blog/rewards-solana/
+
+**if you decide to disable the wallet here is how you can fully disable it:**
+
+
+<p align="center">
+  <img src="img/wallet_dis1.png" alt="Wallet Settings Disabled 1">
+</p>
+
+<p align="center">
+  <img src="img/wallet_dis2.png" alt="Wallet Settings Disabled 2">
+</p>
+
+
+
+<p align="center">
+  <img src="dis_sponsored_images.png" alt="Disable Sponsored images">
+</p>
+
+
+<p align="center">
+  <img src="img/hide_cards.png" alt="Hide cards">
+</p>
+
+*brave://settings/appearance*
+<p align="center">
+  <img src="img/hide_br_bw.png" alt="Hide wallet and Rewards">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***If you find any errors in this guide pls let me know
+I will change it ASAP***
+
+# Begging sections
+
+If you liked this guide and want to help with my orange juice addiction you can donate here:
+
+
+***Monero***
+<p align="center">
+    <img src="img/monero_qr.jpg" alt="Monero" width="512px" height="512px">
+</p>
+
+```
+47E2j1R4HrCcvV75mNo5DRRmSQcmi9rgKSFkd1o4HbshXx5NCiHu7zsFy7AgiWrEZrZ2o1aLdfNeJPD74y6RNCVC9LvgnnD
+```
+
+***Bitcoin***
+<p align="center">
+    <img src="img/bitcoin_qr.png" alt="Bitcoin" width="512px" height="512px">
+</p>
+    
+```
+bc1q3zsfj3k0utdkm725rg43vhu3syw0x5va8mzspm
+```
+
+***Ethereum***
+<p align="center">
+    <img src="img/ethereum_qr.png" alt="Ethereum" width="512px" height="512px">
+</p>
+    
+```
+0xc8803D45ADE7c869bC3b15206e81fB47Bb0A44D8
+```
+
+
+***Basic attention token***
+<p align="center">
+    <img src="img/ethereum_qr.png" alt="BAT" width="512px" height="512px">
+</p>
+        
+```
+0xc8803D45ADE7c869bC3b15206e81fB47Bb0A44D8
+```
