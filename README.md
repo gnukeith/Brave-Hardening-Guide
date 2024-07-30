@@ -21,6 +21,20 @@
 <h3 align="center">Block More Ads and Trackers</h3>
 <p align="center">Hardening Brave makes the browser more aggressive at blocking ads and trackers. This means you are less likely to encounter unwanted ads, making your browsing experience faster and more private.</p>
 <p align="center">In summary, hardening Brave can make it an even more private and secure browser by stopping all telemetry and enhancing ad and tracker blocking capabilities.</p>
+<hr>
+# Table of Contents
+
+- [All Brave shield settings](#1-hardening-via-brave-sheild)
+- [TOR vs Brave 'TOR' ](#tor-settings-in-brave-browser-vs-normal-tor-browser)
+- [Data collection](#data-collection-settings)
+- [DNS settings](#data-collection-settings)
+- [V8 Optimizer](#v8-optimizer-in-brave-browser)
+- [Autofill and Passwords](#3-autofill-and-passwords---settings)
+- [Extensions](#4-extensions---settings)
+- [Search](#5-search---settings)
+- [Brave Wallet/Rewards](#5-walletcrypto---settings)
+
+
 
 <h2 align="center">How to Harden Brave</h2>
 <p align="center">Here are some steps you can take to harden Brave and make it as private as possible:
@@ -747,6 +761,115 @@ Using a dedicated password manager like Bitwarden offers superior security, bett
 <p align="center">
   <img src="img/hide_br_bw.png" alt="Hide wallet and Rewards">
 </p>
+
+<hr>
+
+
+
+# Brave BYOM (Bring Your Own Model)
+#### FYI this is a new feature and it's still in nightly, i just put it here to future proof the guide :D
+
+## Brave BYOM via Ollama
+
+### Step 1: Install Brave Nightly
+
+Download and install Brave Nightly from [https://brave.com/download-nightly/](https://brave.com/download-nightly/).
+
+<p align="center">
+  <img src="img/brave_nightly.png" alt="BYOM choose model">
+</p>
+
+### Step 2: Install Ollama
+
+For Linux, use the following command:
+```
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+otherwise, go to:
+https://ollama.com/
+
+Check if ollama is running:
+http://localhost:11434/
+![Ollama runnig](img/ollama_running.jpeg)
+
+
+**Models examle that you can download**
+```
+ollama pull mathstral
+```
+```
+ollama pull codegeex4
+```
+```
+ollama pull phi3:medium
+```
+
+you can find all the models here:
+https://ollama.com/library 
+
+### Step 3: 
+
+connect your model to **Brave**.
+
+Label: Can be anything you want.
+Model request name: This is important since we are calling that specific model.
+Server endpoint: This is **always the same** for ollama
+http://localhost:11434/v1/chat/completions
+
+![Adding model](img/adding_to_brave.jpeg)
+
+## Brave BYOM via LMStudio
+
+### Step 1: Install Brave Nightly
+
+Download and install Brave Nightly from [https://brave.com/download-nightly/](https://brave.com/download-nightly/).
+
+<p align="center">
+  <img src="img/brave_nightly.png" alt="BYOM choose model">
+</p>
+
+### Step 2: Download LMStudio
+
+1. Download LMStudio from [http://lmstudio.ai](http://lmstudio.ai).
+
+   Open it, search for your preferred models in the top bar, and hit Download. Me and Brave recommend Llama3 8B and Mistral 7B since they don't use much memory but are quite capable. If you are feeling fancy, Phi3-medium is good.
+
+   ![LMStudio Download](img/lstudio_downlaod.png)
+
+### Step 3: Start a Local Server
+
+2. Start a local server in the LMStudio app with your chosen model.
+
+   Click on the ↔️ icon in the left sidebar to open the Local Server panel.
+
+   Select a model to load on the dropdown at the top and hit Start Server (in green). Your chosen model is now running on your device!
+
+   ![LMStudio Server](img/lmstudioserver.png)
+
+### Step 4: Connect Brave to LMStudio
+
+3. Connect Brave to LMStudio.
+
+   In Brave Nightly, go to Settings > Leo and click Add new model. Enter the model request name as it appears in LMStudio’s Local Server panel.
+
+   Set the Server endpoint to [http://localhost:1234/v1/chat/completions](http://localhost:1234/v1/chat/completions).
+
+   Click "Add model" and you're done!
+
+   ![Brave connections](img/bravebyom_connection_lmstudio.png)
+
+Now you're ready to use your local AI model in Brave Nightly.
+
+Access Leo by pressing Ctrl+B (Cmd+B on macOS).
+
+When you click the gear icon in Leo, the new AI model you added will now be listed as one of your options.
+
+<p align="center">
+  <img src="img/selecting_model_lmstudio.png" alt="BYOM choose model">
+</p>
+
+
 
 <hr>
 
