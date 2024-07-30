@@ -769,6 +769,16 @@ Using a dedicated password manager like Bitwarden offers superior security, bett
 # Brave BYOM (Bring Your Own Model)
 #### FYI this is a new feature and it's still in nightly, i just put it here to future proof the guide :D
 
+***Running models locally is important for privacy for several key reasons:***
+
+***Data stays on-device:*** When using a local model, conversations, web pages, and prompts never leave the user's device.
+
+***No third-party access:*** Local models ensure no external parties can access or view the user's data or interactions.
+
+***Full user control:*** Users have complete control over their data and how the AI processes it.
+
+***Reduced data exposure:*** Local processing minimizes the risk of data breaches or unauthorized access that can occur with cloud-based models.
+
 ## Brave BYOM via Ollama
 
 ### Step 1: Install Brave Nightly
