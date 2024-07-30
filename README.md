@@ -41,7 +41,7 @@
 <p align="center">Here are some steps you can take to harden Brave and make it as private as possible:
 
 </p>
-<h3 align="center">1. Hardening via Brave Sheild</h3>
+<h3 align="center">1. Hardening via Brave Shield</h3>
 <p align="center">Brave Shield is a built-in feature that allows you to control the browser's ad-blocking and tracking protection settings. You can access Brave Shield by clicking on the lion icon in the address bar or going to: brave://settings/shields. Here are some settings you can adjust to enhance your privacy:</p>
 
 <h3 align="center">By default the settings should look something like this:</h3>
