@@ -33,7 +33,7 @@
 - [Extensions](#4-extensions---settings)
 - [Search](#5-search---settings)
 - [Brave Wallet/Rewards](#5-walletcrypto---settings)
-
+- [Brave BYOM](#brave-byom-bring-your-own-model)
 
 
 <h2 align="center">How to Harden Brave</h2>
