@@ -22,7 +22,8 @@
 <p align="center">Hardening Brave makes the browser more aggressive at blocking ads and trackers. This means you are less likely to encounter unwanted ads, making your browsing experience faster and more private.</p>
 <p align="center">In summary, hardening Brave can make it an even more private and secure browser by stopping all telemetry and enhancing ad and tracker blocking capabilities.</p>
 <hr>
-# Table of Contents
+
+## Table of Contents
 
 - [All Brave shield settings](#1-hardening-via-brave-sheild)
 - [TOR vs Brave 'TOR' ](#tor-settings-in-brave-browser-vs-normal-tor-browser)
