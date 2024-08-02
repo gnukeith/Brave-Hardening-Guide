@@ -371,8 +371,6 @@ While the intent behind "Do Not Track" is privacy-focused, its practical impact 
 - For maximum privacy and anonymity, the dedicated Tor Browser is recommended.
 - Use Brave's Tor features for occasional private browsing when convenience is preferred over maximum security.
 
-*I just turn TOR mode off completely as it's not as secure as the normal TOR browser.*
-
 <p align="center">
   <img src="img/tor_disabled_notalltho.png" alt="TOR mode off">
 </p>
