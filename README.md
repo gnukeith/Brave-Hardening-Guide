@@ -374,9 +374,25 @@ While the intent behind "Do Not Track" is privacy-focused, its practical impact 
 *I just turn TOR mode off completely as it's not as secure as the normal TOR browser.*
 
 <p align="center">
-  <img src="img/tor_disabled.png" alt="TOR mode off">
+  <img src="img/tor_disabled_notalltho.png" alt="TOR mode off">
 </p>
 
+# Important Note on Brave Tor Settings
+
+When disabling Tor support in Brave, it's crucial to keep the "Only resolve .onion addresses in Tor windows" option **enabled** (toggled ON). 
+
+Here's why:
+
+1. Disabling this option is **not** necessary to fully turn off Tor support.
+2. When disabled, attempts to access .onion addresses will be leaked to your DNS resolver, potentially compromising your privacy.
+3. These leaked requests will still fail to resolve, offering no benefit.
+
+**Who should disable this option?**
+The only users who need to toggle this OFF are those who:
+- Access the Tor network via a custom proxy
+- Use a router that automatically provides Tor access
+
+For the vast majority of users, keeping this option enabled provides better privacy protection, even when not using Tor through Brave.
 ## Data Collection Settings
 
 When hardening Brave for maximum privacy, disable the following settings:
